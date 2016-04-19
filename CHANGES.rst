@@ -10,6 +10,10 @@ Incompatibilities:
 
 New:
 
+- Make use of plone.namedfile's tag() function to generate img tags.
+  Part of plip 1483.
+  [didrix]
+
 - Add jumplist to provide quick access across portlet managers
   [davilima6]
 
