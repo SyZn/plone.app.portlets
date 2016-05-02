@@ -79,13 +79,14 @@ class Renderer(base.Renderer):
             items.append(dict(
                 path=obj.absolute_url(),
                 title=obj.pretty_title_or_id(),
-                item_class = 'contenttype-' + norm(obj.portal_type),
+                item_class='contenttype-' + norm(obj.portal_type),
                 description=obj.Description(),
                 creator=creator_name,
                 review_state=review_state,
                 review_state_class='state-%s ' % norm(review_state),
                 mod_date=toLocalizedTime(obj.ModificationDate()),
-                hasImage = hasImage,                    
+                hasImage=hasImage,
+                images=obj.restrictedTraverse('@@images')
             ))
         return items
 

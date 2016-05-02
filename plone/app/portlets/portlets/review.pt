@@ -27,9 +27,8 @@
                  tal:attributes="href string:${o/path}/view;
                                  title o/description;
                                  class string:$review_state_class tile $item_class">
-                  <img tal:condition="python: o.getIcon"
-                     tal:define="awake_obj o/getObject; icon awake_obj/@@images|nothing"
-                     tal:replace="structure python:icon.scale('image', scale='icon').tag(css_class='image-icon')" />
+                  <img tal:condition="o/hasImage"
+                     tal:replace="structure python:o['images'].scale('image', scale='icon').tag(css_class='image-icon')" />
                   <span tal:replace="o/title">
                       Title
                   </span>
