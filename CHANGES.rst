@@ -1,12 +1,36 @@
 Changelog
 =========
 
-4.1.0 (unreleased)
+4.1.2 (unreleased)
 ------------------
 
-Incompatibilities:
+Breaking changes:
 
 - *add item here*
+
+New features:
+
+- *add item here*
+
+Bug fixes:
+
+- Fixed missing pat-livesearch on search portlet
+  [agitator]
+
+
+4.1.1 (2016-05-26)
+------------------
+
+Bug fixes:
+
+- Improved documentation about ``portlets.xml``.  This is
+  automatically included in
+  http://docs.plone.org/develop/addons/components/genericsetup.html
+  [maurits]
+
+
+4.1.0 (2016-05-15)
+------------------
 
 New:
 
@@ -16,10 +40,6 @@ New:
 
 - Add jumplist to provide quick access across portlet managers
   [davilima6]
-
-Fixes:
-
-- *add item here*
 
 
 4.0.0 (2016-03-31)
